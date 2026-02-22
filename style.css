@@ -1,0 +1,137 @@
+:root {
+
+--bg-color:#030305;
+--card-bg:rgba(10,20,30,0.75);
+
+--primary:#00C2FF;
+--accent:#00E0FF;
+
+--text-main:#ffffff;
+--text-sec:#b0b0d0;
+
+--price-color:#00ff9d;
+
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+background-color:var(--bg-color);
+background-image:
+
+radial-gradient(circle at 50% -20%,
+rgba(0,194,255,0.15),
+transparent 60%),
+
+linear-gradient(
+rgba(255,255,255,0.02) 1px,
+transparent 1px),
+
+linear-gradient(
+90deg,
+rgba(255,255,255,0.02) 1px,
+transparent 1px);
+
+background-size:
+
+100% 100%,
+40px 40px,
+40px 40px;
+
+font-family:'Outfit';
+color:var(--text-main);
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:20px;
+
+}
+
+.card{
+background:var(--card-bg);
+backdrop-filter:blur(20px);
+width:100%;
+max-width:400px;
+border-radius:24px;
+padding:50px 30px;
+text-align:center;
+animation:float 6s infinite;
+}
+
+@keyframes float{
+
+0%{transform:translateY(0)}
+50%{transform:translateY(-10px)}
+100%{transform:translateY(0)}
+}
+
+.logo-container{
+margin-bottom:25px;
+}
+
+.main-logo{
+width:130px;
+height:130px;
+border-radius:50%;
+}
+
+h1{
+font-family:'Rajdhani';
+font-size:2.2rem;
+margin-bottom:5px;
+}
+
+.tagline{
+color:var(--primary);
+margin-bottom:20px;
+display:block;
+}
+
+.description{
+color:var(--text-sec);
+margin-bottom:30px;
+
+}
+
+.price-badge{
+background:rgba(0,255,157,0.1);
+padding:12px 20px;
+border-radius:12px;
+margin-bottom:35px;
+display:inline-block;
+color:var(--price-color);
+
+}
+
+.btn-container{
+display:flex;
+flex-direction:column;
+gap:15px;
+
+}
+
+
+.btn{
+padding:18px;
+border-radius:14px
+text-decoration:none;
+color:white;
+border:1px solid rgba(255,255,255,0.1);
+text-align:center;
+}
+
+.btn.whatsapp{
+background:linear-gradient(
+135deg,
+#00C2FF,
+#008cff);
+
+border:none;
+
+}
